@@ -1,6 +1,5 @@
 # -*- coding:utf-8 -*-
 #! usr/bin/python3
-# import xlrd
 class Animal(object):
     def run(self):
         print('Animal is running')
@@ -30,8 +29,13 @@ class Timer(object):
         print("start..")
 
 if __name__ == '__main__':
-    run_twice(Tortoise())
+    class Timer(object):
+        def run(self):
+            print("start..")
 
+    run(animal())
+
+    # run_twice(Tortoise())
     # dog = Dog()
     # dog.run()
     #
