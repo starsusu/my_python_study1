@@ -28,20 +28,20 @@ class Timer(object):
     def run(self):
         print("start..")
 
+class Student(object):
+	name = 'Student'
+	# def __init__(self,name):
+	# 	self.name = name
+
+
 if __name__ == '__main__':
-    class Timer(object):
-        def run(self):
-            print("start..")
-
-    run(animal())
-
-    # run_twice(Tortoise())
-    # dog = Dog()
-    # dog.run()
-    #
-    # cat = Cat()
-    # cat.run()
-    
-
+	s = Student('bob')
+	print(s.name)
+	# print(Student.name)
+	s.name = 'Michael'
+	print(s.name)
+	print(Student.name)
+	del s.name
+	print(s.name)
 
 
