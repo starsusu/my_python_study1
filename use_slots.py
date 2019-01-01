@@ -32,7 +32,7 @@ class Student(object):
 	# 		raise ValueError('score must between 0~100')
 	# 	self.__score = value
 
-	__slots__ = ('name', 'age','score')
+	__slots__ = ('name', 'age')
 
 
 
@@ -49,6 +49,11 @@ if __name__ == '__main__':
 	# s.set_age = MethodType(set_age,s)
 	# s2.set_age = MethodType(set_age,s2)
 
+	class GraduateStudent(Student):
+		pass
+	g = GraduateStudent()
+	g.score = 34
+	print(g.score)
 	s.set_age(25)
 	print(s.age)
 	s2.set_age(26)
